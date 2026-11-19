@@ -1,0 +1,11 @@
+<root BTCPP_format="4">
+  <BehaviorTree ID="MainTree">
+    <Repeat num_cycles="-1">
+      <Sequence>
+        <StartNode/>
+        <ForwardNode/>
+        <BackwardNode/>
+      </Sequence>
+    </Repeat>
+  </BehaviorTree>
+</root>

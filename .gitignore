@@ -1,0 +1,27 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Colcon
+.colcon/
+
+# VSCode
+.vscode/
+
+# CLion
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Linux
+*~
+
+# Generated maps
+*.pgm
+*.yaml.old
+
+# Zone Identifier
+*:Zone.Identifier

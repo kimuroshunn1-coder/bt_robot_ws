@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<library path="slope_bt_plugin">
+
+  <class
+      type="slope_bt_nodes::SlopeUpNode"
+      base_class_type="BT::TreeNode">
+
+    <description>
+      Detect uphill completion using IMU and Odom.
+    </description>
+
+  </class>
+
+  <class
+      type="slope_bt_nodes::MoveForwardNode"
+      base_class_type="BT::TreeNode">
+
+    <description>
+      publish forward velocity.
+    </description>
+  </class>
+
+  <class
+      type="slope_bt_nodes::SlopeDownNode"
+      base_class_type="BT::TreeNode">
+    <description>
+      Detect downhill completion using IMU and Odom.
+    </description>
+  </class>
+
+  <class
+    type="slope_bt_nodes::MoveBackNode"
+    base_class_type="BT::TreeNode">
+
+   <description>
+    Publish backward velocity.
+   </description>
+
+  </class>
+
+
+</library>
