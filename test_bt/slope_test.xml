@@ -30,8 +30,79 @@
 
     <FollowWaypointsNav2
       file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
-      points="4 1 2 3 4"
+      points="1 2 3 4"
       initial_pose_world="3.0 -6.5 180"/>
+
+    <Parallel success_count="1">
+
+      <MoveForward speed="0.8"
+                   accel="0.5"/>
+
+      <SlopeUp/>
+
+    </Parallel>
+
+    <Parallel success_count="1">
+
+      <MoveBack speed="0.8"
+                accel="0.5"/>
+
+      <SlopeDown/>
+
+    </Parallel>
+
+    <FollowWaypointsNav2
+      file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
+      points="5 4"
+      initial_pose_world="3.0 -6.5 180"/>
+
+    <Parallel success_count="1">
+
+      <MoveForward speed="0.8"
+                   accel="0.5"/>
+
+      <SlopeUp/>
+
+    </Parallel>
+
+    <Parallel success_count="1">
+
+      <MoveBack speed="0.8"
+                accel="0.5"/>
+
+      <SlopeDown/>
+
+    </Parallel>
+
+    <Repeat num_cycles="-1">
+        
+        <Sequence>
+
+          <FollowWaypointsNav2
+              file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
+              points="1 2 3 4"
+              initial_pose_world="3.0 -6.5 180"/>
+
+          <Parallel success_count="1">
+
+            <MoveForward speed="0.8"
+                         accel="0.5"/>
+            <SlopeUp/>
+
+          </Parallel>
+
+          <Parallel success_count="1">
+
+            <MoveBack speed="0.8"
+                      accel="0.5"/>
+            <SlopeDown/>
+
+          </Parallel>
+
+        </Sequence>
+   
+    </Repeat>
+
    </Sequence>
 
   </BehaviorTree>
