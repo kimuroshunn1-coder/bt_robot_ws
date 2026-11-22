@@ -31,7 +31,7 @@
     <FollowWaypointsNav2
       file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
       points="6 1 2 3 4"
-      initial_pose_world="3.0 -6.5 180"/>
+      initial_pose_world="2.9 -6.5 180"/>
 
     <Parallel success_count="1">
 
@@ -54,7 +54,7 @@
     <FollowWaypointsNav2
       file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
       points="6 5 4"
-      initial_pose_world="3.0 -6.5 180"/>
+      initial_pose_world="2.9 -6.5 180"/>
 
     <Parallel success_count="1">
 
@@ -81,7 +81,7 @@
           <FollowWaypointsNav2
               file="/home/kimuro/nav2_ws/src/my_robot_sim/config/waypoints.yaml"
               points="6 1 2 3 4"
-              initial_pose_world="3.0 -6.5 180"/>
+              initial_pose_world="2.9 -6.5 180"/>
 
           <Parallel success_count="1">
 
