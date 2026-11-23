@@ -44,6 +44,7 @@ add_library(
   src/slope_down_node.cpp
   src/move_forward_node.cpp
   src/move_back_node.cpp
+  src/angle_state_node.cpp
   src/follow_waypoints_nav2_node.cpp
 )
 

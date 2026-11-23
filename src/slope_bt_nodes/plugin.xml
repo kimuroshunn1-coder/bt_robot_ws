@@ -39,5 +39,14 @@
 
   </class>
 
+  <class
+    type="slope_bt_nodes::AngleStateNode"
+    base_class_type="BT::TreeNode">
+
+   <description>
+    Rotate robot to target heading.
+   </description>
+
+  </class>
 
 </library>
