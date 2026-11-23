@@ -165,7 +165,7 @@ SlopeDownNode::onRunning()
 
       if (
         pitch_deg_ > -2.0 &&
-        travel > 3.5)
+        travel > 4.6 )
       {
         RCLCPP_INFO(
           node_->get_logger(),
